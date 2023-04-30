@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title> 
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      display:flex;
+    }
+
+    img {
+      margin-left: 30vh;
+      margin-top: 1vh;
+    }
+
+ .div{
+  margin-top: 10vh;
+  margin-left: 0vh;
+  width: 100%;
+  height: 8vh;
+  background-color: rgb(223, 63, 90);
+  border-radius: 0%;
+  position: absolute;
+ }
+
+.input-box {
+  padding-top: 4vh;
+  position: absolute;
+  margin-top: 0.5vh;
+  margin-left: 72vh;
+  height: 3vh;
+  width: 60vh;
+  background: rgb(86, 131, 199);
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.input-box i,
+.input-box .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-box input {
+  height: 100%;
+  width: 65%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 10px; 
+  background-color: transparent;
+  position: absolute;
+  top: 2px;
+  border: none;
+}
+.input-box .button {
+  right: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(86, 131, 199);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  background-color: rgb(223, 63, 90);
+  cursor: pointer;
+}
+.input-box .button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+.category{
+  position: absolute;
+  width: 160vh;
+  height: 18vh;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid; 
+  border-radius: 2vh;
+  border-color: rgb(223, 63, 90);
+  margin-top: 28vh;
+  margin-left: 22vh;
+}
+
+.category img {
+  width: 128px;
+  height: 90px;
+  margin-left: 37px;
+  cursor: pointer;
+}
+/*adidebs fotos mausis mitanisas*/
+.category img:hover {
+  transform: scale(1.2);
+}
+.pirveli{
+  position: absolute;
+  width: 100vh;
+  height:36vh;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid; 
+  border-radius: 2vh;
+  border-color: rgb(223, 63, 90);
+  margin-top: 50vh;
+  margin-left: 22vh;
+}
+
+.pirveli img{
+  width: 40vh;
+  height: 32vh;
+  border-radius: 2vh;
+  margin-left: 3vh;
+  margin-top: 2vh;
+}
+
+.meore{
+  position: absolute;
+  width: 56vh;
+  height:36vh;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid; 
+  border-radius: 2vh;
+  border-color: rgb(223, 63, 90);
+  margin-top: 50vh;
+  margin-left: 126vh;
+}
+
+.meore img:first-child{
+  width: 15vh;
+  height: 10vh;
+  margin-left: 4vh;
+  margin-top: 2vh;
+}
+
+.meore img{
+  width: 4vh;
+  height: 3vh;
+  margin-left: 4vh;
+  margin-top: 1.3vh;
+  display: flex;
+  flex-direction: column-reverse; /* ganalagebs horizontalurad */
+}
+
+.meore img:last-child{
+  width: 18vh;
+  height: 15vh;
+  margin-left: 37vh;
+  margin-top: -14vh;
+}
+
+.blah{
+  position: absolute;
+  width: 50vh;
+  height: 47vh;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid; 
+  border-radius: 2vh;
+  border-color: rgb(223, 63, 90);
+  margin-top: 98vh;
+  margin-left: 22vh;
+}
+
+.blah img{
+  margin-top: 2vh;
+  margin-left: 2vh;
+  width: 46vh;
+  border-radius: 2vh;
+}
+
+.blah2{
+  position: absolute;
+  width: 50vh;
+  height: 47vh;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid; 
+  border-radius: 2vh;
+  border-color: rgb(223, 63, 90);
+  margin-top: 98vh;
+  margin-left: 76.8vh;
+}
+
+.blah2 img{
+  margin-top: 2vh;
+  margin-left: 2vh;
+  width: 46vh;
+  border-radius: 2vh;
+}
+
+.blah3{
+  position: absolute;
+  width: 50vh;
+  height: 47vh;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid; 
+  border-radius: 2vh;
+  border-color: rgb(223, 63, 90);
+  margin-top: 98vh;
+  margin-left: 132vh;
+}
+
+.blah3 img{
+  margin-top: 2vh;
+  margin-left: 2vh;
+  width: 46vh;
+  border-radius: 2vh;
+}
+
+.cats{
+  position: absolute;
+  width: 50vh;
+  height: 47vh;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid; 
+  border-radius: 2vh;
+  border-color: rgb(223, 63, 90);
+  margin-top: 158vh;
+  margin-left: 22vh;
+}
+
+.cats img{
+  margin-top: 2vh;
+  margin-left: 2vh;
+  width: 46vh;
+  border-radius: 2vh;
+}
+
+.cats2{
+  position: absolute;
+  width: 50vh;
+  height: 47vh;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid; 
+  border-radius: 2vh;
+  border-color: rgb(223, 63, 90);
+  margin-top: 158vh;
+  margin-left: 76.8vh;
+}
+
+.cats2 img{
+  margin-top: 2vh;
+  margin-left: 2vh;
+  width: 46vh;
+  border-radius: 2vh;
+}
+
+.cats3{
+  position: absolute;
+  width: 50vh;
+  height: 47vh;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid; 
+  border-radius: 2vh;
+  border-color: rgb(223, 63, 90);
+  margin-top: 158vh;
+  margin-left: 132vh;
+}
+
+.cats3 img{
+  margin-top: 2vh;
+  margin-left: 2vh;
+  width: 46vh;
+  border-radius: 2vh;
+}
+
+.lastrow{
+  position: absolute;
+  width: 50vh;
+  height: 47vh;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid; 
+  border-radius: 2vh;
+  border-color: rgb(223, 63, 90);
+  margin-top: 218vh;
+  margin-left: 22vh;
+}
+
+.lastrow img{
+  margin-top: 2vh;
+  margin-left: 2vh;
+  width: 46vh;
+  border-radius: 2vh;
+}
+
+.lastrow2{
+  position: absolute;
+  width: 50vh;
+  height: 47vh;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid; 
+  border-radius: 2vh;
+  border-color: rgb(223, 63, 90);
+  margin-top: 218vh;
+  margin-left: 76.8vh;
+}
+
+.lastrow2 img{
+  margin-top: 2vh;
+  margin-left: 2vh;
+  width: 46vh;
+  border-radius: 2vh;
+}
+
+.lastrow3{
+  position: absolute;
+  width: 50vh;
+  height: 47vh;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid; 
+  border-radius: 2vh;
+  border-color: rgb(223, 63, 90);
+  margin-top: 218vh;
+  margin-left: 132vh;
+}
+
+.lastrow3 img{
+  margin-top: 2vh;
+  margin-left: 2vh;
+  width: 46vh;
+  border-radius: 2vh;
+}
+
+.lastcontainer{
+  background-color: #bdb7bd;
+  width: 100%;
+  height: 34vh;
+  margin-top: 274vh;
+  margin-right: 20vh;
+  border-radius: 0%;
+  position: absolute;
+}
+
+.lastcontainer img{
+      margin-left: 30vh;
+      margin-top: -4vh;
+}
+
+  </style>
+</head>
+<body>
+  <img src="Screenshot (72).png" width="30vh" height="30vh">
+  <p style="margin-top: 1vh; font-size:30px; color:#bdb7bd">PETSUMER</p><br><br><br><br>
+<div class="div">
+   <div class="input-box">
+    <i class="uil uil-search"></i>
+    <input type="text" placeholder="" />
+    <button class="button">Search</button>
+   </div>
+</div>
+<p style="position:absolute; margin-top: 22vh; font-size: 3vh; margin-left: 42%;">CHOOSE A CATEGORY</p>
+<div class="category">
+  <a href="https://www.youtube.com/watch?v=VHygTMF98Rw" target="_blank">
+    <img src="Screenshot (59).png" alt="Your Image" />
+  </a>
+  <a href="https://www.youtube.com/watch?v=lXEdLaezft4" target="_blank">
+    <img src="Screenshot (64).png" alt="Your Image" />
+  </a>
+  <a href="https://www.youtube.com/watch?v=VHygTMF98Rw" target="_blank">
+    <img src="Screenshot (65).png" alt="Your Image" />
+  </a>
+  <a href="https://www.youtube.com/watch?v=lXEdLaezft4" target="_blank">
+    <img src="Screenshot (66).png" alt="Your Image" />
+  </a>
+  <a href="https://www.youtube.com/watch?v=VHygTMF98Rw" target="_blank">
+    <img src="Screenshot (67).png" alt="Your Image" />
+  </a>
+  <a href="https://www.youtube.com/watch?v=lXEdLaezft4" target="_blank">
+    <img src="Screenshot (68).png" alt="Your Image" />
+  </a>
+  </div>
+
+  <div class="pirveli">
+    <img src="Screenshot (70).png" alt="Your Image" />  
+    <p style="position: absolute; font-size: 3vh; margin-top: -33vh; margin-left: 45vh;"><b>11 Best Dog Harnesses of 2023, <br> According to Experts and Pet Parents</p></b>
+    <p style="position: absolute; margin-left: 45vh; margin-top: -24vh">When it's time to take your beloved pooch on a W-A-L-K, having the right gear will make all the difference. Whether you've got a dog that can't help but pull you all the way around the block, or a new pup that hasn't seemed to master their training just yet, the right dog harness can help make your trips outside fun for everyone involved.</p>
+    <a href="https://www.goodhousekeeping.com/life/pets/g28198571/best-dog-harnesses/" target="_blank" style="position: absolute; margin-left: 2vh; margin-top: 31vh; color:rgb(223, 63, 90); ;">Read More</a>
+  </div>   
+   
+  <div class="meore">
+    <img src="Screenshot (71).png" alt="Your Image" />  
+    <p style="position: absolute; margin-top: -8vh; margin-left: 21vh; font-size: 5vh; color:rgb(223, 63, 90);">Why Trust Us?</p>
+    <p style="font-size: 2.4vh; margin-left: 5vh; margin-top: 0vh;">some text here. some text here. some text here. some text here. some text here. some text here. some text here. some text here. some text here.</p>
+    <img src="sun.png" alt="Your Image" width="40vh"/> 
+    <img src="sun.png" alt="Your Image" width="40vh"/> 
+    <img src="sun.png" alt="Your Image" width="40vh"/> 
+    <p style="position: absolute; margin-left: 11vh; font-size: 2.6vh;  margin-top: -11.3vh; font-family:Georgia, 'Times New Roman', Times, serif">blablabla</p>
+    <p style="position: absolute; margin-left: 11vh; font-size: 2.6vh;  margin-top: -7.3vh; font-family:Georgia, 'Times New Roman', Times, serif">blablabla</p>
+    <p style="position: absolute; margin-left: 11vh; font-size: 2.6vh;  margin-top: -3.3vh; font-family:Georgia, 'Times New Roman', Times, serif">blablabla</p>
+    <img src="Screenshot (72).png" alt="Your Image" />  
+  </div> 
+
+  <p style="position: absolute; margin: 50vh; margin-left: 23vh; margin-top: 90vh; font-size: 4vh;">Dog Harness</p>
+  <a href="..." target="_blank" style="color:rgb(223, 63, 90); margin-top: 91vh; font-size: 3vh; margin-left: 112vh;" >View All</a>
+
+  <div class="blah">
+    <img src="Screenshot (80).png" alt="Your Image" />
+    <p style="font-size: 3.5vh; margin-left: 2vh; margin-top: 1vh; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Best Harnesses For Boxers</p>
+    <p style="font-size: 2.2vh; margin-left: 2vh; margin-top: -2vh;">So you’ve decided it’s time to transition your Boxer dog to a harness? Here we take the guesswork out of it for you as we review the best harnesses for your boxer dog. Boxer dogs have a unique body shape. </p>
+    <a href="https://www.loveyourdog.com/best-boxer-harness/" target="_blank" style="position: absolute; margin-left: 2vh; margin-top: -0.5vh; color:rgb(223, 63, 90); ;">Read More</a>
+  </div>
+
+  <div class="blah2">
+    <img src="Screenshot (78).png" alt="Your Image" />
+    <p style="font-size: 3.5vh; margin-left: 2vh; margin-top: 1vh; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">10 Best Harnesses for Golden Retrievers</p>
+    <p style="font-size: 2.2vh; margin-left: 2vh; margin-top: -2vh;">Golden Retrievers are big dogs with a gentle temperament. If you are looking for the ultimate house pet, it is hard to go wrong with a Golden.</p>
+    <a href="https://www.hepper.com/best-harness-for-golden-retrievers/" target="_blank" style="position: absolute; margin-left: 2vh; margin-top: -1vh; color:rgb(223, 63, 90); ;">Read More</a>
+  </div>
+
+  <div class="blah3">
+    <img src="Screenshot (79).png" alt="Your Image" />
+    <p style="font-size: 3.5vh; margin-left: 2vh; margin-top: 1vh; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">10 Best Harnesses For Pitbuls</p>
+    <p style="font-size: 2.2vh; margin-left: 2vh; margin-top: -2vh;">While Pit Bulls can make excellent pets in the right home, they are powerful dogs that may require a little extra support on a leash due to their strength.</p>
+    <a href="https://petkeen.com/best-harnesses-for-pit-bulls/" target="_blank" style="position: absolute; margin-left: 2vh; margin-top: -0.5vh; color:rgb(223, 63, 90); ;">Read More</a>
+ </div>
+
+ <p style="position: absolute; margin: 50vh; margin-left: 23vh; margin-top: 150vh; font-size: 4vh;">Cat Brushes</p>
+ <a href="..." target="_blank" style="color:rgb(223, 63, 90); margin-top: 151vh; font-size: 3vh; margin-left: -10vh;" >View All</a> 
+
+ <div class="cats">
+  <img src="Screenshot (81).png" alt="Your Image" />
+  <p style="font-size: 3.5vh; margin-left: 2vh; margin-top: 1vh; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">The 7 Best Cat Brushes of 2023</p>
+  <p style="font-size: 2.2vh; margin-left: 2vh; margin-top: -2vh;">Brushing a cat removes dirt, skin flakes, and hair that has already been shed. It also stimulates blood circulation which improves the condition of their skin, keeping their coat healthy.</p>
+  <a href="https://www.thesprucepets.com/best-cat-brushes-4590060" target="_blank" style="position: absolute; margin-left: 2vh; margin-top: -0.5vh; color:rgb(223, 63, 90); ;">Read More</a>
+</div>
+
+<div class="cats2">
+  <img src="Screenshot (82).png" alt="Your Image" />
+  <p style="font-size: 3.5vh; margin-left: 2vh; margin-top: 1vh; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Best Brushes for Persian Cats</p>
+  <p style="font-size: 2.2vh; margin-left: 2vh; margin-top: -2vh;">Persian cats require quite a bit of grooming to look their best. Otherwise, their coat can easily become matted and dirty. Brushing not only removes loose hair and keeps their fur tangle-free</p>
+  <a href="https://petkeen.com/best-brushes-for-persian-cats/" target="_blank" style="position: absolute; margin-left: 2vh; margin-top: -1vh; color:rgb(223, 63, 90); ;">Read More</a>
+</div>
+
+<div class="cats3">
+  <img src="Screenshot (83).png" alt="Your Image" />
+  <p style="font-size: 3.5vh; margin-left: 2vh; margin-top: 1vh; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">The Best Cat Brush Glove:</p>
+  <p style="font-size: 2.2vh; margin-left: 2vh; margin-top: -2vh;">Best Overall Cat Brush Glove: Delomo Pet Grooming Glove Gentle Deshedding Brush Glove.This is our top pick when it comes to the best Cat Brush Glove, thanks to its special design and high rankings on platforms such as Amazon and Chewy.</p>
+  <a href="https://www.loveyourdog.com/best-boxer-harness/" target="_blank" style="position: absolute; margin-left: 2vh; margin-top: -0.5vh; color:rgb(223, 63, 90); ;">Read More</a>
+</div>
+
+<p style="position: absolute; margin: 50vh; margin-left: 23vh; margin-top: 210vh; font-size: 4vh;">Recent Posts</p>
+<a href="..." target="_blank" style="color:rgb(223, 63, 90); margin-top: 211vh; font-size: 3vh; margin-left: -10vh;" >View All</a> 
+
+<div class="lastrow">
+  <img src="1234 (3).png" alt="Your Image" />
+  <p style="font-size: 3.5vh; margin-left: 2vh; margin-top: 1vh; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">best harnesses for doodles</p>
+  <p style="font-size: 2.2vh; margin-left: 2vh; margin-top: -2vh;">The short chase usually ends with her jerking her neck when she reaches the end of the leash. So in order for her not to hurt herself, we decided to switch to a harness while working on leash training.</p>
+  <a href="https://happyoodles.com/2020/01/the-best-dog-harness-for-doodles/" target="_blank" style="position: absolute; margin-left: 2vh; margin-top: -0.5vh; color:rgb(223, 63, 90); ;">Read More</a>
+</div>
+
+<div class="lastrow2">
+  <img src="1234 (1).png" alt="Your Image" />
+  <p style="font-size: 3.5vh; margin-left: 2vh; margin-top: 1vh; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Best Harnesses for French Bulldogs</p>
+  <p style="font-size: 2.2vh; margin-left: 2vh; margin-top: -2vh;">What’s not to love about the French Bulldog? They’ve consistently topped the list as one of the most popular breeds in the United States for the last five years</p>
+  <a href="https://petkeen.com/best-harnesses-for-french-bulldogs/" target="_blank" style="position: absolute; margin-left: 2vh; margin-top: -1vh; color:rgb(223, 63, 90); ;">Read More</a>
+</div>
+
+<div class="lastrow3">
+  <img src="1234 (2).png" alt="Your Image" />
+  <p style="font-size: 3.5vh; margin-left: 2vh; margin-top: 1vh; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Cute Names to Give Your Cat</p>
+  <p style="font-size: 2.2vh; margin-left: 2vh; margin-top: -2vh;">So you've just brought home a new cat or kitten. After shopping for all the essentials like toys, litter, a collar, and food and getting your furry friend all settled into their new home</p>
+  <a href="https://www.countryliving.com/life/a40799263/best-cute-cat-names/" target="_blank" style="position: absolute; margin-left: 2vh; margin-top: -0.5vh; color:rgb(223, 63, 90); ;">Read More</a>
+</div>
+
+<div class="lastcontainer">
+  <br><br><br><br><img src="image2vector (4).svg" width="40vh" height="40vh">
+  <p style="font-size:6vh; color:#5a585a; margin-top: -3.2%; margin-left: 36vh;">PETSUMER</p>
+  <p style="font-size:2.7vh; color:#5a585a; margin-top: -2%; margin-left: 30vh;">some text here. some text here. some text here. some text here.<br>  some text here. some text here. some text here. some text here.<br>  some text here. some text here. some text here. some text here.<br>  some text here. some text here. some text here. some text here.</p>
+  <p style="font-size:2.7vh; color:#5a585a; margin-top: -7.5%; margin-left: 110vh;"> some text here. some text here. some text here.<br>  some text here. some text here. some text here. <br>  some text here. some text here. some text here.<br>  some text here. some text here. some text here.</p>
+  <p style="font-size:2.7vh; color:#000000; margin-top: -7.5%; margin-left: 175vh;"><b>some<br>text<br>here.</b></p> 
+</div> 
+
+<p style="margin-top: 310vh; margin-left: -93vh;"><b>Copyright c 2023 Petsumer</b></p>
+</body>
+</html>
