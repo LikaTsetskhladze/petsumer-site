@@ -1,0 +1,347 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display:flex;
+  width: 204.4vh;
+  height: 315vh;
+}
+
+img {
+  margin-left: 30vh;
+  margin-top: 1vh;
+}
+
+.div{
+margin-top: 10vh;
+margin-left: 0vh;
+width: 205.4vh;
+height: 8vh;
+background-color: rgb(223, 63, 90);
+border-radius: 0vh;
+position: absolute;
+}
+
+.input-box {
+padding-top: 4vh;
+position: absolute;
+margin-top: 0.5vh;
+margin-left: 72vh;
+height: 3vh;
+width: 60vh;
+background: rgb(86, 131, 199);
+border-radius: 8px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.input-box i,
+.input-box .button {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.input-box input {
+height: 100%;
+width: 65%;
+outline: none;
+font-size: 18px;
+font-weight: 400;
+padding-left: 10px; 
+background-color: transparent;
+position: absolute;
+top: 2px;
+border: none;
+}
+.input-box .button {
+right: 8px;
+font-size: 14px;
+font-weight: 400;
+color: rgb(86, 131, 199);
+border: none;
+padding: 12px 30px;
+border-radius: 10px;
+background-color: rgb(223, 63, 90);
+cursor: pointer;
+}
+.input-box .button:active {
+transform: translateY(-50%) scale(0.98);
+}
+
+.category{
+position: absolute;
+width: 160vh;
+height: 18vh;
+background-color: white;
+border-width: 1px;
+border-style: solid; 
+border-radius: 2vh;
+border-color: rgb(223, 63, 90);
+margin-top: 28vh;
+margin-left: 22vh;
+}
+
+.category img {
+width: 120px;
+height: 90px;
+margin-left: 37px;
+cursor: pointer;
+}
+/*adidebs fotos mausis mitanisas*/
+.category img:hover {
+transform: scale(1.2);
+}
+.pirveli{
+position: absolute;
+width: 100vh;
+height:36vh;
+background-color: white;
+border-width: 1px;
+border-style: solid; 
+border-radius: 2vh;
+border-color: rgb(223, 63, 90);
+margin-top: 50vh;
+margin-left: 22vh;
+}
+
+.pirveli img{
+width: 40vh;
+height: 32vh;
+border-radius: 2vh;
+margin-left: 3vh;
+margin-top: 2vh;
+}
+
+.meore{
+position: absolute;
+width: 56vh;
+height:36vh;
+background-color: white;
+border-width: 1px;
+border-style: solid; 
+border-radius: 2vh;
+border-color: rgb(223, 63, 90);
+margin-top: 50vh;
+margin-left: 126vh;
+}
+
+.meore img:first-child{
+width: 15vh;
+height: 10vh;
+margin-left: 4vh;
+margin-top: 2vh;
+}
+
+.meore img{
+width: 4vh;
+height: 3vh;
+margin-left: 4vh;
+margin-top: 1.3vh;
+display: flex;
+flex-direction: column-reverse; /* ganalagebs horizontalurad */
+}
+
+.meore img:last-child{
+width: 18vh;
+height: 15vh;
+margin-left: 37vh;
+margin-top: -14vh;
+}
+
+.blah{
+position: absolute;
+width: 50vh;
+height: 47vh;
+background-color: white;
+border-width: 1px;
+border-style: solid; 
+border-radius: 2vh;
+border-color: rgb(223, 63, 90);
+margin-top: 98vh;
+margin-left: 22vh;
+}
+
+.blah img{
+margin-top: 2vh;
+margin-left: 2vh;
+width: 46vh;
+border-radius: 2vh;
+}
+
+.blah2{
+position: absolute;
+width: 50vh;
+height: 47vh;
+background-color: white;
+border-width: 1px;
+border-style: solid; 
+border-radius: 2vh;
+border-color: rgb(223, 63, 90);
+margin-top: 98vh;
+margin-left: 76.8vh;
+}
+
+.blah2 img{
+margin-top: 2vh;
+margin-left: 2vh;
+width: 46vh;
+border-radius: 2vh;
+}
+
+.blah3{
+position: absolute;
+width: 50vh;
+height: 47vh;
+background-color: white;
+border-width: 1px;
+border-style: solid; 
+border-radius: 2vh;
+border-color: rgb(223, 63, 90);
+margin-top: 98vh;
+margin-left: 132vh;
+}
+
+.blah3 img{
+margin-top: 2vh;
+margin-left: 2vh;
+width: 46vh;
+border-radius: 2vh;
+}
+
+.cats{
+position: absolute;
+width: 50vh;
+height: 47vh;
+background-color: white;
+border-width: 1px;
+border-style: solid; 
+border-radius: 2vh;
+border-color: rgb(223, 63, 90);
+margin-top: 158vh;
+margin-left: 22vh;
+}
+
+.cats img{
+margin-top: 2vh;
+margin-left: 2vh;
+width: 46vh;
+border-radius: 2vh;
+}
+
+.cats2{
+position: absolute;
+width: 50vh;
+height: 47vh;
+background-color: white;
+border-width: 1px;
+border-style: solid; 
+border-radius: 2vh;
+border-color: rgb(223, 63, 90);
+margin-top: 158vh;
+margin-left: 76.8vh;
+}
+
+.cats2 img{
+margin-top: 2vh;
+margin-left: 2vh;
+width: 46vh;
+border-radius: 2vh;
+}
+
+.cats3{
+position: absolute;
+width: 50vh;
+height: 47vh;
+background-color: white;
+border-width: 1px;
+border-style: solid; 
+border-radius: 2vh;
+border-color: rgb(223, 63, 90);
+margin-top: 158vh;
+margin-left: 132vh;
+}
+
+.cats3 img{
+margin-top: 2vh;
+margin-left: 2vh;
+width: 46vh;
+border-radius: 2vh;
+}
+
+.lastrow{
+position: absolute;
+width: 50vh;
+height: 47vh;
+background-color: white;
+border-width: 1px;
+border-style: solid; 
+border-radius: 2vh;
+border-color: rgb(223, 63, 90);
+margin-top: 218vh;
+margin-left: 22vh;
+}
+
+.lastrow img{
+margin-top: 2vh;
+margin-left: 2vh;
+width: 46vh;
+border-radius: 2vh;
+}
+
+.lastrow2{
+position: absolute;
+width: 50vh;
+height: 47vh;
+background-color: white;
+border-width: 1px;
+border-style: solid; 
+border-radius: 2vh;
+border-color: rgb(223, 63, 90);
+margin-top: 218vh;
+margin-left: 76.8vh;
+}
+
+.lastrow2 img{
+margin-top: 2vh;
+margin-left: 2vh;
+width: 46vh;
+border-radius: 2vh;
+}
+
+.lastrow3{
+position: absolute;
+width: 50vh;
+height: 47vh;
+background-color: white;
+border-width: 1px;
+border-style: solid; 
+border-radius: 2vh;
+border-color: rgb(223, 63, 90);
+margin-top: 218vh;
+margin-left: 132vh;
+}
+
+.lastrow3 img{
+margin-top: 2vh;
+margin-left: 2vh;
+width: 46vh;
+border-radius: 2vh;
+}
+
+.lastcontainer{
+background-color: #bdb7bd;
+width: 205.4vh;
+height: 34vh;
+margin-top: 274vh;
+margin-right: 20vh;
+border-radius: 0vh;
+position: absolute;
+}
+
+.lastcontainer img{
+  margin-left: 30vh;
+  margin-top: -3vh;
+}
+
+a{
+    text-decoration: none;
+}
